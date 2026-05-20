@@ -1,0 +1,13 @@
+server:
+  port: 3333
+spring:
+  application:
+    name: apibiblioteca
+#  datasource:
+#    url: jdbc:postgresql://ep-small-grass-ajm1l1m0-pooler.c-3.us-east-2.aws.neon.tech/neondb?user=neondb_owner&password=npg_TiImCOY5spQ6&sslmode=require&channelBinding=require
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    generate-ddl: true
+#    show-sql: true
+#  
