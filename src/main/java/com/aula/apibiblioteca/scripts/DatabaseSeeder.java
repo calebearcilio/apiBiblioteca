@@ -23,9 +23,11 @@ public class DatabaseSeeder implements CommandLineRunner {
       User user1 = new User();
       user1.setName("Calebe");
       user1.setEmail("calebe@email.com");
+      user1.setPassword("123456");
       User user2 = new User();
       user2.setName("Maria");
       user2.setEmail("maria@email.com");
+      user2.setPassword("123456");
 
       userRepository.save(user1);
       userRepository.save(user2);

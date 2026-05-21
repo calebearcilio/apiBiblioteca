@@ -23,7 +23,7 @@ public class Book {
   private String title;
   @Column(nullable = false)
   private String author;
-  private int amount = 0;
+  private Integer amount = 0;
 
   public void update(Book book) {
     title = book.title;
@@ -40,7 +40,7 @@ public class Book {
       author = dto.author();
     }
 
-    if (dto.amount() > 0) {
+    if (dto.amount() != null && dto.amount() > 0) {
       amount = dto.amount();
     }
   }
