@@ -20,29 +20,149 @@ public class DatabaseSeeder implements CommandLineRunner {
 
     if (userRepository.count() == 0) {
 
-      User user1 = new User();
-      user1.setName("Calebe");
-      user1.setEmail("calebe@email.com");
-      user1.setPassword("123456");
-      User user2 = new User();
-      user2.setName("Maria");
-      user2.setEmail("maria@email.com");
-      user2.setPassword("123456");
+      userRepository.save(new User(
+              null,
+              "Carlos Silva",
+              "carlos.silva@email.com",
+              "carlos123"
+      ));
 
-      userRepository.save(user1);
-      userRepository.save(user2);
+      userRepository.save(new User(
+              null,
+              "Mariana Costa",
+              "mariana.costa@email.com",
+              "mariana789"
+      ));
 
-      Book book1 = new Book();
-      book1.setTitle("Harry Potter");
-      book1.setAuthor("J.K. Rowling");
-      book1.setAmount(10);
-      Book book2 = new Book();
-      book2.setTitle("Senhor dos Anéis");
-      book2.setAuthor("J.R.R. Tolkien");
-      bookRepository.save(book1);
-      bookRepository.save(book2);
+      userRepository.save(new User(
+              null,
+              "João Pereira",
+              "joao.pereira@email.com",
+              "joao4567"
+      ));
 
-      System.out.println("Seed executado.");
+      userRepository.save(new User(
+              null,
+              "Fernanda Lima",
+              "fernanda.lima@email.com",
+              "fernanda321"
+      ));
+
+      userRepository.save(new User(
+              null,
+              "Lucas Almeida",
+              "lucas.almeida@email.com",
+              "lucas987"
+      ));
+
+      userRepository.save(new User(
+              null,
+              "Patrícia Rocha",
+              "patricia.rocha@email.com",
+              "patricia654"
+      ));
+
+      userRepository.save(new User(
+              null,
+              "Ricardo Souza",
+              "ricardo.souza@email.com",
+              "ricardo741"
+      ));
+
+      userRepository.save(new User(
+              null,
+              "Juliana Martins",
+              "juliana.martins@email.com",
+              "juliana852"
+      ));
+
+      userRepository.save(new User(
+              null,
+              "Eduardo Gomes",
+              "eduardo.gomes@email.com",
+              "eduardo963"
+      ));
+
+      userRepository.save(new User(
+              null,
+              "Camila Ferreira",
+              "camila.ferreira@email.com",
+              "camila159"
+      ));
+    }
+
+    if (bookRepository.count() == 0) {
+
+      bookRepository.save(new Book(
+              null,
+              "Clean Code",
+              "Robert C. Martin",
+              5
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Effective Java",
+              "Joshua Bloch",
+              3
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Design Patterns",
+              "Erich Gamma",
+              7
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Refactoring",
+              "Martin Fowler",
+              2
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Spring in Action",
+              "Craig Walls",
+              4
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Java Concurrency in Practice",
+              "Brian Goetz",
+              0
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Domain-Driven Design",
+              "Eric Evans",
+              6
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "The Pragmatic Programmer",
+              "Andrew Hunt",
+              0
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Head First Design Patterns",
+              "Eric Freeman",
+              1
+      ));
+
+      bookRepository.save(new Book(
+              null,
+              "Algorithms",
+              "Robert Sedgewick",
+              0
+      ));
+      IO.println("Seed executado.");
     }
   }
 }

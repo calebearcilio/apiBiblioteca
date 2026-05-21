@@ -16,7 +16,7 @@ public class BookService {
 
   private final BookRepository bookRepository;
 
-  public Page<Book> findAll(@PageableDefault(size = 10, sort = "title") Pageable pageable) {
+  public Page<Book> findAll(@PageableDefault(size = 4, sort = "title") Pageable pageable) {
     return bookRepository.findAll(pageable);
   }
 

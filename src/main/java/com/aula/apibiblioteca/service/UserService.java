@@ -16,7 +16,7 @@ public class UserService {
 
   private final UserRepository userRepository;
 
-  public Page<User> findAll(@PageableDefault(size = 10, sort = "name") Pageable pageable) {
+  public Page<User> findAll(@PageableDefault(size = 4, sort = "name") Pageable pageable) {
     return userRepository.findAll(pageable);
   }
 
